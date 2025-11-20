@@ -72,9 +72,15 @@ const words2 = [
   "disobedience",
 ];
 
-function doesWordExist(words2Arr) {
+function doesWordExist(words2Arr, wordToSearch) {
   if (!words2Arr.length) {
     return null;
   }
+  for (let i = 0; i < words2Arr.length; i++) {
+    if (words2Arr[i] === wordToSearch) {
+      return true;
+    }
+  }
+  return false;  // Si on sort de la boucle sans avoir trouvé le mot, alors il n'existe pas
 }
-console.log(doesWordExist(words2));
+console.log(doesWordExist(words2, "subset"));
