@@ -78,7 +78,7 @@ function doesWordExist(words2Arr, wordToSearch) {
   } 
   for (let i = 0; i < words2Arr.length; i++) {
     if (words2Arr[i] === wordToSearch) {
-      return true;
+      return true; 
     }
   }
   return false;  // Si on sort de la boucle sans avoir trouvé le mot, alors il n'existe pas
