@@ -75,7 +75,7 @@ const words2 = [
 function doesWordExist(words2Arr, wordToSearch) {
   if (!words2Arr.length) {
     return null;
-  }
+  } 
   for (let i = 0; i < words2Arr.length; i++) {
     if (words2Arr[i] === wordToSearch) {
       return true;
